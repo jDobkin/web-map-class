@@ -1,0 +1,18 @@
+p {
+  color: black;
+  font-size: larger;
+}
+
+#big-box {
+  background-color: #0078ae;
+  width: auto;
+  height: max-content;
+  border: 1px 67abd1;
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
