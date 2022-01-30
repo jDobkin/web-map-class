@@ -55,3 +55,25 @@ map.on("load", () => {
     },
   });
 });
+
+map.on("mouseover", (e) => {
+    const features = map.queryRenderedFeatures(e.point);
+    const displayProperties = [
+        'types',
+        'frght_est'
+    ];
+
+    const displayFeatures = features.map((feat) => {
+        const displayFeat = {};
+        displayProperties.forEach((prop) => {
+            displayFeat[prop] = feat[prop];
+        });
+        return displayFeat;
+    });
+
+    document.getElementById('features').innerHTML = JSON.stringify(
+        displayFeatures,
+        null,
+        2
+    );
+});
