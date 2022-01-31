@@ -34,8 +34,8 @@ map.on("load", () => {
     source: "traffic-analysis-zone-tiles",
     "source-layer": "TAZ_2010",
     paint: {
-      "fill-opacity": 0,
-      "fill-color": "black",
+      "fill-opacity": 0.5,
+      "fill-color": "blue",
     },
   });
 
@@ -57,7 +57,7 @@ map.on("load", () => {
     type: "line",
     source: "regional-rail-line-geojson",
     paint: {
-      "line-width": 2,
+      "line-width": 4,
       "line-opacity": 1,
       "line-color": "black",
     },

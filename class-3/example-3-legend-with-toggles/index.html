@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Demo: Add points to a web map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="map">
+      <div id="legend">
+        <h1>SEPTA Regional Rail</h1>
+        <form id="legend-form">
+          <div>
+            <input
+              type="checkbox"
+              id="routes"
+              name="routes"
+              value="routes"
+              checked
+            />
+            <span>&#9473;</span>
+            <label for="routes"> Routes</label><br />
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="stations"
+              name="stations"
+              value="stations"
+              checked
+            />
+            <span style="color: red"> &#9679; </span>
+            <label for="stations"> Stations</label><br />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
